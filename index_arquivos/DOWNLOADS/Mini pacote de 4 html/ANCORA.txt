@@ -1,0 +1,130 @@
+﻿
+
+<!--------------------------ANCORA------------------------------>
+<!-------------------------------------
+O código de destino, isto é, o ponto de chegada ao ser clicado é:
+<p><li><a name="ancora🔴">ancora🔴</a></li></p>
+E o código do comando "ir para" é:
+<p><li><a href="#ancora🔴">ir para ancora🔴</a></li></p>
+Você pode criar vários pontos, como:
+<p><li><a name="ancora2🔴"> e <a href="#ancora2🔴">ir para ancora2🔴</a></li></p>
+Para fazer o usuário "Ir para o topo" não é necessário uma âncora como acima, tem um código especial para isto: 
+<p><li><a href="#top">Ir para o topo</a></li></p>
+Para ir à outra página:
+<p><li><a href="nomedapagina🔴/1 - Copia.html#ancora🔴">ir para ancora🔴</a></li></p>
+Utilizando uma imagem como âncora: 
+<p><li><a href="#ancora🔴"><img src="imagem.jpg🔴"></a></li></p>
+
+<p><h3><a href="#top">TOPO</a></h3></p>
+----------------------------------------->
+<HR WIDTH="80%" NOSHADE SIZE="8" color="red">
+
+<!-------------------------------
+<strong>NEGRITO</strong>.
+<B>NEGRITO</B>
+
+
+" target="_blank">
+----------------------------->
+SEPARADOR
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_style_hr
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dividers
+<!--------------------------------------------------->
+
+https://www.htmlprogressivo.net/2013/04/Como-fazer-o-text-deslizar-pela-tela-em-HTML.html
+TXT TESTO Txt txt
+<br/><textarea rows="10" cols="100" maxlength="1500">
+TEXTO AQUI
+</textarea><BR/>
+
+<!------------------------------txt-----------texto------------------->
+OUTRA MAQUINA
+https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/marquee
+
+
+MAQUINA  kkkkkkkkkk
+<marquee> kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk <br></marquee>
+
+<marquee behavior="alternate">
+<center>
+<font face="Comic Sans MS" size="4" color="#ff0000">
+<b>
+<blink>
+em movimento
+</blink>
+</b>
+</font>
+</center>
+</marquee>
+
+
+<b id='piscando' style="transition-duration:0.5s">
+TEXTO PISCANDO
+</b><script>
+var teste = 0;
+ setInterval(piscar, 500);
+ function piscar(){
+if(teste<1){
+teste++;
+document.getElementById('piscando').style.opacity = '1';
+} else{
+teste = 0; 
+document.getElementById('piscando').style.opacity = '0';
+}};
+</script>
+
+
+<p>Texto em negrito com <b>bold</b> e <strong>strong</strong>.</p>
+<p>Texto em itálico com <i>italics<i> e <em>emphasis</em>.</p>
+<p>Texto <sup>sobrescrito</sup> e <sub>subscrito</sub>.</p>
+<p>Texto <ins>inserido</ins> e <del>excluído</del>.</p>
+<p>Texto <small>pequeno</small> e <mark>destacado</mark>.</p>
+
+<p>Este é um texto com um <span>
+trecho em destaque</span>.</p>
+<p>
+Este é um texto com um <span
+style="background: #1abc9c; border-radius:5px; padding:5px">
+trecho em destaque</span>.
+</p>
+
+https://www.htmlprogressivo.net/2013/04/Como-fazer-o-text-deslizar-pela-tela-em-HTML.html
+<!------------------------------------------------------------------>
+<p>
+Este é um texto com um <span
+style="background: #1abc9c; border-radius:5px; padding:5px">
+trecho em destaque</span>.
+</p>
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Typewriter</h1>
+
+<button onclick="typeWriter()">Click me</button>
+
+<p id="demo"></p>
+
+<script>
+var i = 0;
+var txt = 'Lorem ipsum dummy text blabla.';
+var speed = 50;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+
+</body>
+</html>
